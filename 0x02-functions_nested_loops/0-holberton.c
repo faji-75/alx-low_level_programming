@@ -15,7 +15,6 @@ int main(void)
 	char e = 'e';
 	char r = 'r';
 	char t = 't';
-	char o = 'o';
 	char n = 'n';
 
 		{
