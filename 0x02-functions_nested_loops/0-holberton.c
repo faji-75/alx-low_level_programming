@@ -1,13 +1,18 @@
 #include <stdio.h>
+/**
+* main - main block
+* Description: Use `putchar` function to print the alphabet in lowercase.
+* Return: 0
+*/
 
-int main()
+int main(void)
 {
 
 	char h = 'H';
 	char o = 'o';
 	char l = 'l';
 	char b = 'b';
-	char e = 'e'; 
+	char e = 'e';
 	char r = 'r';
 	char t = 't';
 	char o = 'o';
@@ -26,7 +31,7 @@ int main()
 		}
 		 putchar('\n');
 
-		 return (0);
-	
-		
+		return (0);
+
+
 }
