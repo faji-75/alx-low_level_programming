@@ -12,7 +12,7 @@ void times_table(void)
 	{
 		while (y <= 9)
 		{
-			z = x * y
+			z = x * y;
 			_putchar(z);
 			y++;
 		}
