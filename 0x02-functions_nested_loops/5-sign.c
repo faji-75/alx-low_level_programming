@@ -8,6 +8,7 @@
 int print_sign(int n)
 {
 	char f;
+
 	if (n > 0)
 	{
 		f = '+';
