@@ -15,7 +15,7 @@ void print_alphabet_x10(void)
 
 	l = 1;
 
-if (l <= 10 , l++)
+if (l <= 10 )
 {
 	letter = 'a';
 
@@ -25,6 +25,7 @@ if (l <= 10 , l++)
 		letter++;
 	}
 	putchar('\n');
+	l++;
 }
 }
 
