@@ -3,21 +3,22 @@
 /**
 * main - main block
 * Description: Use `putchar` function to print the alphabet in lowercase.
-* Return: 0
+* Description: print_alphabet prints the alphabet
+*Return: 0
 */
 
 void print_alphabet(void)
 {
-char letter;
+	char letter;
 
-letter = 'a';
+	letter = 'a';
 
-while (letter <= 'z')
-{
-putchar(letter);
-letter++;
-}
-putchar('\n');
+	while (letter <= 'z')
+	{
+		putchar(letter);
+		letter++;
+	}
+	putchar('\n');
 }
 
 
