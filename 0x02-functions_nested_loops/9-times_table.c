@@ -16,6 +16,8 @@ void times_table(void)
 			{
 			z = x * y;
 			_putchar(z / 10 + '0');
+			_putchar(z % 10 + '0');
+
 		if (y < 9)
 		{
 			_putchar(',');
