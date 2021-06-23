@@ -5,17 +5,17 @@
 void times_table(void)
 {
 	int x = 0;
-	int y;
+	int y = 0;
 	int z;
 
 	while (x < 10)
 	{
-		y = 0;
+
 		while (y < 10)
 		{
 			{
 			z = x * y;
-			_putchar(z + '0');
+			_putchar(z / 10 + '0');
 		if (y < 9)
 		{
 			_putchar(',');
