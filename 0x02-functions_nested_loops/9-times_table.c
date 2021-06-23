@@ -13,7 +13,9 @@ void times_table(void)
 		while (y < 2)
 		{
 			z = x * y;
-			_putchar(z);
+			_putchar(z + '0');
+			_putchar(',');
+			_putchar(' ');
 			y++;
 		}
 		_putchar('\n');
