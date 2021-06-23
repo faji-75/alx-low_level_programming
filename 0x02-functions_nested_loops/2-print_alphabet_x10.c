@@ -14,7 +14,7 @@ void print_alphabet_x10(void)
 	int l = 0;
 
 
-if (l > 10)
+while (l < 10)
 {
 	letter = 'a';
 
