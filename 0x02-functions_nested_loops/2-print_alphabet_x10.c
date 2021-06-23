@@ -1,20 +1,23 @@
 #include <stdio.h>
+#include "holberton.h"
 /**
 * main - main block
-* Description: Use `putchar` function to print the alphabet in lowercase.
+* print_alphabet function to print the lowercase alphabet.
 * Return: 0
 */
-int main(void)
-{
-	char c = 'a';
 
-	while (c <= 'z')
+void print_alphabet(void)
+{
+	char letter;
+
+	letter = 'a';
+
+	while (letter <= 'z')
 	{
-		putchar(c);
-		c++;
+		putchar(letter);
+		letter++;
 	}
 	putchar('\n');
-
-	return (0);
 }
+
 
