@@ -18,12 +18,13 @@ void times_table(void)
 		{
 			_putchar(',');
 			_putchar(' ');
+			_putchar(' ');
 		}
 			y++;
-		
-		
-		_putchar('\n');
+
 		}
+		_putchar('\n');
+
 		x++;
 	}
 }
