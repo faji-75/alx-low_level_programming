@@ -1,6 +1,7 @@
 #include "holberton.h"
 /**
- * _islower - function that checks for lowercase character.
+ * print_sign - function give the sign.
+ * @n: integert type.
  * Return: 1 for lowercase otherwise 0.
  */
 
