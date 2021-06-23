@@ -1,9 +1,13 @@
-#include <stdio.h>
 #include "holberton.h"
 /**
- * main - main block
- * print_alphabet function to print the lowercase alphabet.
- * Return: 0
+ * _islower - function that checks for lowercase character.
+ * Return: 1 for lowercase otherwise 0.
  */
 
-
+int _islower(int c)
+{
+	if (c > 96 && c <123)
+		return (1);
+	else
+		return (0);
+}
