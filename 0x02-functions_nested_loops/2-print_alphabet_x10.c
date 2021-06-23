@@ -11,10 +11,10 @@ void print_alphabet_x10(void)
 
 	char letter;
 
-	int l = 1;
+	int l = 0;
 
 
-if (l<=10 )
+if (l<10 )
 {
 	letter = 'a';
 
