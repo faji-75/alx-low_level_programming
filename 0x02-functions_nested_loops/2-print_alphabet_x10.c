@@ -19,10 +19,10 @@ while (l < 10)
 
 	while (letter <= 'z')
 	{
-		putchar(letter);
+		_putchar(letter);
 		letter++;
 	}
-	putchar('\n');
+	_putchar('\n');
 	l++;
 }
 }
