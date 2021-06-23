@@ -5,17 +5,19 @@
 * Description: Use `putchar` function to print the alphabet in lowercase.
 * Return: 0
 */
-int main(void)
+
+void print_alphabet(void)
 {
-	char c = 'a';
+char letter;
 
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
-	putchar('\n');
+letter = 'a';
 
-	return (0);
+while (letter <= 'z')
+{
+putchar(letter);
+letter++;
 }
+putchar('\n');
+}
+
 
