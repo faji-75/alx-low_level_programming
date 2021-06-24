@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
-  *
-  *
+  * print_square - prints square of #
+  * @size: int type
   */
 
 void print_square(int size)
@@ -17,10 +17,10 @@ void print_square(int size)
 		a = b;
 		while (a > 0)
 		{
-			_putchar(35);
+			_putchar('#');
 			a--;
 		}
 		_putchar('\n');
-		size --;
+		size--;
 	}
 }
