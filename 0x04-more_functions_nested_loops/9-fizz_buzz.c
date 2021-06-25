@@ -10,9 +10,8 @@ int main(void)
 	char buzz[] = "Buzz";
 	char fizzbuzz[] = "FizzBuzz";
 	int i;
-	int a;
+	int a = 1;
 
-	a = 1;
 	while (a < 101)
 	{
 		i = 0;
@@ -20,26 +19,17 @@ int main(void)
 		if (a % 3 == 0 && a % 5 == 0)
 		{
 			while (fizzbuzz[i] != '\0')
-			{
-				putchar(fizzbuzz[i]);
-				i++;
-			}
+				putchar(fizzbuzz[i++]);
 		}
 		else if (a % 3 == 0)
 		{
 			while (fizz[i] != '\0')
-			{
-				putchar(fizz[i]);
-				i++;
-			}
+				putchar(fizz[i++]);
 			}
 		else if (a % 5 == 0)
 		{
 			while (buzz[i] != '\0')
-			{
-				putchar(buzz[i]);
-				i++;
-			}
+				putchar(buzz[i++]);
 		}
 		else
 		{
