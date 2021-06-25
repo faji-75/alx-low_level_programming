@@ -9,7 +9,7 @@
 void print_number(int n)
 {
 	int copy, nth, size = 1, ones = n % 10;
-	
+
 	n /= 10;
 	copy = n;
 
