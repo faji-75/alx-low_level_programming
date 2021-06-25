@@ -6,16 +6,18 @@
   */
 int main(void)
 {
-	long i, number = 612852475143;
+	long b = 2, a = 612852475143;
 
-	for (i  = 2; i <= number; i++)
+	while (b <= a)
 	{
-		if (number % i == 0)
+		if (a % b == 0)
 		{
-			number = number / i;
-			i--;
+			a = a / b;
+			b--;
 		}
+		b++;
+
 	}
-	printf("%lu\n", i);
+	printf("%lu\n", b);
 	return (0);
 }
