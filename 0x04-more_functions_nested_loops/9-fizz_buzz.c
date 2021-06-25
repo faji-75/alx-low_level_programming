@@ -1,6 +1,8 @@
 #include <stdio.h>
-
-
+/**
+  * main - function that prints from 1 to 100 with fizzbuzz
+  * Return: returns 0
+  */
 
 int main(void)
 {
