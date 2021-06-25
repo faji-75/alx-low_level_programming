@@ -8,47 +8,37 @@ int main(void)
 {
 	char fizz[] = "Fizz";
 	char buzz[] = "Buzz";
+	char fizzbuzz[] = "FizzBuzz";
 	int i;
-	int j;
 	int a;
 
 	a = 1;
 	while (a < 101)
 	{
 		i = 0;
-		j = 0;
 
-		if (a % 3 == 0)
+		if (a % 3 == 0 && a % 5 == 0)
 		{
-			if (a % 5 == 0)
+			while (fizzbuzz[i] != '\0')
 			{
-				while (fizz[i] != '\0')
-				{
-					putchar(fizz[i]);
-					i++;
-				}
-
-				while (buzz[j] != '\0')
-				{
-					putchar(buzz[j]);
-					j++;
-				}
-			}
-			else
-			{
-				while (fizz[i] != '\0')
-				{
-					putchar(fizz[i]);
-					i++;
-				}
+				putchar(fizz[i]);
+				i++;
 			}
 		}
+		else if (a % 3 == 0)
+		{
+			while (fizz[i] != '\0')
+			{
+				putchar(fizz[i]);
+				i++;
+			}
+			}
 		else if (a % 5 == 0)
 		{
-			while (buzz[j] != '\0')
+			while (buzz[i] != '\0')
 			{
-				putchar(buzz[j]);
-				j++;
+				putchar(buzz[i]);
+				i++;
 			}
 		}
 		else
