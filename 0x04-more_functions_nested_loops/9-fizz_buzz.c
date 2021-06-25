@@ -21,7 +21,7 @@ int main(void)
 		{
 			while (fizzbuzz[i] != '\0')
 			{
-				putchar(fizz[i]);
+				putchar(fizzbuzz[i]);
 				i++;
 			}
 		}
