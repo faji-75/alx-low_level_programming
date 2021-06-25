@@ -6,14 +6,64 @@
 
 int main(void)
 {
-	char Fizz;
-	char Buzz;
-	char FizzBuzz;
+	char fizz[] = "Fizz";
+	char buzz[] = "Buzz";
+	int i;
+	int j;
 	int a;
 
 	a = 1;
 	while (a < 101)
 	{
-		if (a % 3 = 0)
+		i = 0;
+		j = 0;
+
+		if (a % 3 == 0)
 		{
-			if (a % 5 = 0)
+			if (a % 5 == 0)
+			{
+				while (fizz[i] != '\0')
+				{
+					putchar(fizz[i]);
+					i++;
+				}
+
+				while (buzz[j] != '\0')
+				{
+					putchar(buzz[j]);
+					j++;
+				}
+				putchar(' ');
+			}
+			else
+			{
+				while (fizz[i] != '\0')
+				{
+					putchar(fizz[i]);
+					i++;
+				}
+				putchar(' ');
+			}
+		}
+		else if (a % 5 == 0)
+		{
+			while (buzz[j] != '\0')
+			{
+				putchar(buzz[j]);
+				j++;
+			}
+			putchar(' ');
+		}
+		else
+		{
+			if (a > 9)
+			{
+				putchar(a / 10 + '0');
+			}
+			putchar(a % 10 + '0');
+			putchar(' ');
+		}
+		a++;
+	}
+	return (0);
+}
