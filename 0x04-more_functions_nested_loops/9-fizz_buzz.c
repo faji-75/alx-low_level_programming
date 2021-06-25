@@ -33,8 +33,6 @@ int main(void)
 					putchar(buzz[j]);
 					j++;
 				}
-				if (a < 100)
-				putchar(' ');
 			}
 			else
 			{
@@ -43,8 +41,6 @@ int main(void)
 					putchar(fizz[i]);
 					i++;
 				}
-				if (a < 100)
-				putchar(' ');
 			}
 		}
 		else if (a % 5 == 0)
@@ -54,8 +50,6 @@ int main(void)
 				putchar(buzz[j]);
 				j++;
 			}
-			if (a < 100)
-			putchar(' ');
 		}
 		else
 		{
@@ -64,9 +58,10 @@ int main(void)
 				putchar(a / 10 + '0');
 			}
 			putchar(a % 10 + '0');
-			if (a < 100)
-			putchar(' ');
 		}
+		if (a < 100)
+			putchar(' ');
+
 		a++;
 	}
 	putchar('\n');
