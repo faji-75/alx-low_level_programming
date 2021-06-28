@@ -15,7 +15,7 @@ void print_rev(char *s)
 
 	if (a < 1)
 	{
-		
+
 	}
 	else
 	{
