@@ -1,6 +1,11 @@
 #include "holberton.h"
 #include <stdio.h>
-
+/**
+  * print_array - function prints array
+  * @a: int type
+  * @n: int type
+  * Return: no return value
+  */
 
 void print_array(int *a, int n)
 {
