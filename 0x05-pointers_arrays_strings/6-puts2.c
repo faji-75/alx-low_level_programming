@@ -14,6 +14,10 @@ void puts2(char *str)
 	{
 		i++;
 	}
+	if (i % 2 > 0)
+		i++;
+
+
 	i = i / 2;
 
 	while (i  > 0)
