@@ -1,19 +1,19 @@
 #include "holberton.h"
 /**
-  * print_rev - function prints string
+  * rev_string - function prints string
   * @s: pointer char type
   * Return: no return value
   */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int a = 0;
 
-	while (*(s + a) != '\0')
+	while (s[a] != '\0')
 	{
 		a++;
 	}
 	do {
-		_putchar(*(s + a));
+		_putchar(s[a]);
 		a--;
 	} while (a >= 0);
 
