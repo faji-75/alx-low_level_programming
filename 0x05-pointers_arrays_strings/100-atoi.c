@@ -1,47 +1,28 @@
 #include "holberton.h"
-#include <stdio.h>
+
 /**
-  * print_number - Print an integer using only _putchar
-  * @n: integer to print
+  * _atoi - converts a string to an integer
+  * @s: string to convert
+  *
+  * Return: value of integer
   */
-
-void print_number(int n)
+int _atoi(char *s)
 {
-	int power;
-	int neg;
-	int hold;
+	int i, j, n, m;
 
-	neg = 0;
-	power = 1;
-	hold = n;
-	if (n < 0)
+	i = n = 0;
+	m = 1;
+	while ((*(s + i) < '0' || *(s + i) > '9') && (*(s + i) != '\0'))
 	{
-		_putchar('-');
-		neg = 1;
+		if (*(s + i) == '-')
+			m *= -1;
+		i++;
 	}
-
-	while (hold > 9 || hold < -9)
+	j = i;
+	while ((*(s + j) >= '0') && (*(s + j) <= '9'))
 	{
-		power *= 10;
-		hold /= 10;
+		n = n * 10 + m * (*(s + j) - '0');
+		j++;
 	}
-
-	while (power > 0)
-	{
-		if (power > 9)
-		{
-			if (!neg)
-				_putchar((n / power % 10) + '0');
-			else
-				_putchar((n / power % 10) * -1 + '0');
-
-			power /= 10;
-		}
-		if (power == 1)
-		{
-			if (neg)
-				_putchar((n % 10) * -1 + '0');
-			else
-				_putchar(n % 10 + '0');
-			power = 0;
-		}
+	return (n);
+}
