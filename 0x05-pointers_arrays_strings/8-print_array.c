@@ -1,5 +1,5 @@
-#include "holberton.h"
 #include <stdio.h>
+#include "holberton.h"
 /**
   * print_array - function prints array
   * @a: int type

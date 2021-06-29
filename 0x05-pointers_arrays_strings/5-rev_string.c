@@ -1,13 +1,31 @@
 #include "holberton.h"
 /**
-  * rev_string - function prints string
-  * @s: pointer char type
-  * Return: no return value
+  *rev_string - update value.
+  *@s: value to be evaluate.
+  *Return: not.
   */
 void rev_string(char *s)
 {
-	
+	int len = 0;
+	int l = 0;
+	char *y;
+	int e = 0;
+	int x;
+	char n;
 
-	 s[2] = 0;
+	y = s;
 
+	while (*y != '\0')
+	{
+		y++;
+		len++;
+	}
+	l = len - 1;
+	for ( ; e < ((l / 2) + 1) ; e++)
+	{
+		x = (l - e);
+		n = s[e];
+		s[e] = s[x];
+		s[x] = n;
+	}
 }
