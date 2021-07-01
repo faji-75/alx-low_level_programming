@@ -4,6 +4,7 @@
   * _strncat - function appends the src string to the dest string
   * @dest: char type
   * @src: char type
+  * @n: int type
   * Return: returns dest
   */
 char *_strncat(char *dest, char *src, int n)
@@ -27,7 +28,7 @@ char *_strncat(char *dest, char *src, int n)
 	dest[a] = ' ';
 	b = a + n;
 
-	
+
 	while (*y != '\0' && a < b)
 	{
 		dest[a] = *y;
