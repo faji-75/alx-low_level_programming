@@ -1,6 +1,6 @@
 #ifndef _HOLBERTON_H_
 #define _HOLBERTON_H_
 
-#define SIZE 1024
+#define SUM(x, y) ((x) - (y))
 
  #endif /* _HOLBERTON_H_ */
