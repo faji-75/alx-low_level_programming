@@ -1,9 +1,6 @@
 #ifndef _HOLBERTON_H_
 #define _HOLBERTON_H_
 
-#define ABS(x) ( if x < 0 \
-		x = -x \
-		else \
-		x )
+#define ABS(x) ((x<0)?(-x):(x))
 
  #endif /* _HOLBERTON_H_ */
