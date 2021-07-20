@@ -1,6 +1,9 @@
 #ifndef _HOLBERTON_H_
 #define _HOLBERTON_H_
 
-#define SIZE 1024
+#define ABS(x) (if x < 0 \
+		x = -x \
+		else \
+		x)
 
  #endif /* _HOLBERTON_H_ */
